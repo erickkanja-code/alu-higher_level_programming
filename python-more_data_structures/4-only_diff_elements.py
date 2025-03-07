@@ -1,4 +1,4 @@
-#!/usr/bin/python 3
+#!/usr/bin/python3
 def only_diff_elements(set_1, set_2):
     new_set = set()
     for lang in set_1:
