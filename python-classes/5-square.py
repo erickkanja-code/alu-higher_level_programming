@@ -33,4 +33,4 @@ class Square:
             if self.__size > 0:
                 print('#' * self.__size)
             else:
-                print(" ", end=" ")
+                print()
