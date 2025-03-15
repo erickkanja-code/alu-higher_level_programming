@@ -41,3 +41,11 @@ class Rectangle:
             return 0
         else:
             return (self.width * 2) + (self.height * 2)
+
+    def __str__(self):
+        if self.height == 0 or self.width == 0:
+            return ''
+        rect = ''
+        for _ in range(self.height):
+            rect += '#' * self.width + '\n'
+        return rect.strip()
