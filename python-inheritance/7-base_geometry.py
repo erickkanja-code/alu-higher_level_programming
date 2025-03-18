@@ -14,6 +14,19 @@ class BaseGeometry:
         """
         raise Exception("area() is not implemented")
     def integer_validator(self, name, value):
+        """
+        >>> test2 = BaseGeometry()
+        >>> test2.integer_validator("Erick", "10")
+        Traceback (most recent call last):
+        ...
+        TypeError: Erick must be an integer
+        
+        >>> test2 = BaseGeometry()
+        >>> test2.integer_validator("Erick", 0)
+        Traceback (most recent call last):
+        ...
+        ValueError: Erick must be greater than 0
+        """
         if not isinstance(value, int):
             raise TypeError(f"{name} must be an integer")
         else:
