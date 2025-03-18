@@ -5,6 +5,13 @@
 class BaseGeometry:
     """This is an empty class"""
     def area(self):
+        """Lets see how this goes:
+        >>> test1 = BaseGeometry()
+        >>> test1.area()
+        Traceback (most recent call last):
+        ...
+        Exception: area() is not implemented
+        """
         raise Exception("area() is not implemented")
     def integer_validator(self, name, value):
         if not isinstance(value, int):
