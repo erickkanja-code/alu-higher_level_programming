@@ -5,4 +5,4 @@ def load_from_json_file(filename):
     """documenting it"""
     with open(filename, "r+") as file:
         content = file.read()
-        json.loads(content)
+        return(json.loads(content))
