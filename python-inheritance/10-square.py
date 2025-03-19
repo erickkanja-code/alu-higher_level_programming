@@ -30,6 +30,7 @@ class Rectangle(BaseGeometry):
         return f"[Rectangle] {self.__width/self.__height}"
 
 class Square(Rectangle):
+    """A lot of doing sth about it"""
     def __init__(self, size):
         """5 days a week sth is happening"""
         self.integer_validator("size", size)
